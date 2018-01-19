@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="divider">#efefef</color>
+    <color name="pref_screen_edit_text_item_divider">#D8D8DC</color>
+    <color name="trans_detail_color_gray">#717171</color>
+    <color name="trans_detail_color_normal">#202020</color>
+    <color name="setting_background_color2">#FFFFFF</color>
+</resources>

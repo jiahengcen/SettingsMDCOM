@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pref_screen_edit_text_item_height"
+    android:background="@drawable/pref_screen_item_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pref_screen_edit_text_item_padding_lr"
+        android:paddingRight="@dimen/pref_screen_edit_text_item_padding_lr">
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pref_screen_edit_text_title_margin_bottom"
+            android:textSize="@dimen/pref_header_item_content_text_size"
+            android:textColor="@color/trans_detail_color_normal"/>
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_screen_category_layout_txt_size"
+            android:textColor="@color/trans_detail_color_gray"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/pref_screen_edit_text_item_divider"/>
+</LinearLayout>

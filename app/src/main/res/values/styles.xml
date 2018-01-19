@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomTheme" parent="@style/AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <!--<item name="android:textColor">@android:color/black</item>-->
+
+        <!-- 注意，该句指定此样式中的actionbar的样式 -->
+        <!--<item name="android:actionBarStyle">@style/MyCustomActionBar</item>-->
+
+        <!-- 注意，该句指定此样式中的actionbar的高度 -->
+        <item name="android:actionBarSize">@dimen/settings_header_layout_height</item>
+
+        <!-- 注意，该句指定此样式中的actionbar底部没有阴影和分界线高度 -->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+
+        <!--<item name="contentInsetStart">-20dp</item>-->
+        <!--<item name="contentInsetEnd">-20dp</item>-->
+    </style>
+</resources>

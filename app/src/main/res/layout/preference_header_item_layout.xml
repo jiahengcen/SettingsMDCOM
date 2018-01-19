@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pref_header_item_layout_height"
+    android:gravity="center_vertical"
+    android:background="@drawable/pref_list_item_selector"
+    android:paddingEnd="?android:attr/scrollbarSize">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="@dimen/pref_header_item_icon_margin_lr"
+        android:layout_marginEnd="@dimen/pref_header_item_icon_margin_lr"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginTop="@dimen/pref_header_item_content_layout_margin_tb"
+        android:layout_marginBottom="@dimen/pref_header_item_content_layout_margin_tb">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textSize="@dimen/pref_header_item_content_text_size"
+            android:textColor="@color/trans_detail_color_normal"/>
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/title"
+            android:layout_below="@id/title"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/trans_detail_color_normal"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/pref_header_item_content_arrow_margin_lr"
+        android:src="@mipmap/view_item"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sty.setting.md.view.EditTextPreferenceFix
+        android:layout="@layout/shared_preference_screen_edittext_layout"
+        android:defaultValue="000000000000000"
+        android:key="EDC_MERCHANT_ID"
+        android:maxLength="15"
+        android:selectAllOnFocus="true"
+        android:title="@string/edc_merchant_id" />
+
+    <com.sty.setting.md.view.EditTextPreferenceFix
+        android:layout="@layout/shared_preference_screen_edittext_layout_last"
+        android:defaultValue="00000000"
+        android:key="EDC_TERMINAL_ID"
+        android:maxLength="8"
+        android:selectAllOnFocus="true"
+        android:title="@string/edc_terminal_id" />
+
+    <PreferenceCategory android:layout="@layout/shared_preference_screen_divider_layout"/>
+
+    <!-- 打开一个subscreen 用于结算交易控制-->
+    <PreferenceCategory
+        android:layout="@layout/shared_preference_screen_category_layout"
+        android:title="@string/trans_manage_ctrl_settle">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="SETTLE_AUTO_LOGOUT"
+            android:title="@string/tm_settle_menu_auto_logout"
+            android:layout="@layout/shared_preference_screen_switch_layout"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="SETTLE_PRINT_DETAIL"
+            android:title="@string/tm_settle_menu_is_print_detail"
+            android:layout="@layout/shared_preference_screen_switch_layout_last"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/shared_preference_screen_divider_layout"/>
+
+    <ListPreference
+        android:layout="@layout/shared_preference_screen_edittext_layout"
+        android:defaultValue="@string/wifi"
+        android:dialogTitle="@string/commParam_menu_comm_mode_choose"
+        android:entries="@array/commParam_menu_comm_mode_list_entries"
+        android:entryValues="@array/commParam_menu_comm_mode_values_list_entries"
+        android:key="COMM_TYPE"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/commParam_menu_comm_mode" />
+
+    <PreferenceCategory android:layout="@layout/shared_preference_screen_divider_layout"/>
+
+    <PreferenceCategory
+        android:layout="@layout/shared_preference_screen_category_layout"
+        android:persistent="false"
+        android:title="@string/communication_time_out">
+        <com.sty.setting.md.view.EditTextPreferenceFix
+            android:layout="@layout/shared_preference_screen_edittext_layout"
+            android:capitalize="words"
+            android:defaultValue="30"
+            android:digits="1234567890"
+            android:ems="2"
+            android:inputType="number"
+            android:key="COMM_TIMEOUT"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/commParam_menu_comm_timeout" />
+
+        <com.sty.setting.md.view.EditTextPreferenceFix
+            android:layout="@layout/shared_preference_screen_edittext_layout"
+            android:capitalize="words"
+            android:defaultValue="5"
+            android:digits="1234567890"
+            android:ems="2"
+            android:inputType="number"
+            android:key="COMM_TRANS_TIMEOUT"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/commPara_menu_trans_timeout" />
+
+        <com.sty.setting.md.view.EditTextPreferenceFix
+            android:layout="@layout/shared_preference_screen_edittext_layout"
+            android:capitalize="words"
+            android:defaultValue="5"
+            android:digits="1234567890"
+            android:ems="2"
+            android:inputType="number"
+            android:key="COMM_REQUERY_INTERVAL_TIME"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/commPara_menu_requery_interval_time" />
+
+        <com.sty.setting.md.view.EditTextPreferenceFix
+            android:layout="@layout/shared_preference_screen_edittext_layout"
+            android:defaultValue="5"
+            android:digits="1234567890"
+            android:ems="2"
+            android:inputType="number"
+            android:key="COMM_REQUERY_TIMEOUT"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/commPara_menu_requery_timeout" />
+    </PreferenceCategory>
+</PreferenceScreen>

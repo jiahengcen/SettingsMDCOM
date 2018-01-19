@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="commParam_menu_comm_mode_list_entries">
+        <item>@string/demo</item>
+        <item>@string/system_adaptation</item>
+        <item>@string/mobile</item>
+        <item>@string/wifi</item>
+    </string-array>
+
+    <string-array name="commParam_menu_comm_mode_values_list_entries">
+        <item>@string/demo</item>
+        <item>@string/system_adaptation</item>
+        <item>@string/mobile</item>
+        <item>@string/wifi</item>
+    </string-array>
+</resources>

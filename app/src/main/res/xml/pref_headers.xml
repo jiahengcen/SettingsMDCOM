@@ -1,0 +1,28 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+    <header
+        android:fragment="com.sty.setting.md.fragment.TransManageFragment"
+        android:icon="@mipmap/merchant_icon"
+        android:title="@string/settings_menu_merchant" />
+
+    <header
+        android:fragment="com.sty.setting.md.fragment.TransManageFragment"
+        android:icon="@mipmap/transaction_icon"
+        android:title="@string/settings_menu_transaction" />
+
+    <header
+        android:fragment="com.sty.setting.md.fragment.TransManageFragment"
+        android:icon="@mipmap/system_icon"
+        android:title="@string/settings_menu_system_parameter" />
+
+    <header
+        android:fragment="com.sty.setting.md.fragment.TransManageFragment"
+        android:icon="@mipmap/communication_icon"
+        android:title="@string/settings_menu_communication_parameter" />
+
+    <header
+        android:fragment="com.sty.setting.md.fragment.TransManageFragment"
+        android:icon="@mipmap/key_icon"
+        android:title="@string/settings_menu_keyManage" />
+</preference-headers>

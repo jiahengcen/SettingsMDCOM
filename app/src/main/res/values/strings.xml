@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SettingsMDCOM</string>
+
+    <!-- 系统设置 -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_menu_communication_parameter">Comm</string>
+    <string name="settings_menu_merchant">Merchant</string>
+    <string name="settings_menu_transaction">Transaction</string>
+    <string name="settings_menu_system_parameter">System</string>
+    <string name="settings_menu_keyManage">Key</string>
+
+    <string name="trans_manage_ctrl_settle">Settlement Trans Control</string>
+    <string name="tm_settle_menu_auto_logout">Auto Log-off after Settlement</string>
+    <string name="tm_settle_menu_is_print_detail">Print Settlement Details?</string>
+
+    <string name="edc_merchant_id">Merchant ID(15)</string>
+    <string name="edc_terminal_id">Terminal ID(8)</string>
+
+    <string name="commParam_menu_comm_mode_choose">Please Choose Comm Mode:</string>
+    <string name="commParam_menu_comm_mode">Communication Type</string>
+    <string name="wifi">WIFI</string>
+    <string name="demo">DEMO</string>
+    <string name="system_adaptation">SYSTEM_ADAPTION</string>
+    <string name="mobile">MOBILE</string>
+
+    <string name="communication_time_out">Time out</string>
+    <string name="commParam_menu_comm_timeout">Comm Timeout</string>
+    <string name="commPara_menu_trans_timeout">Transaction Timeout</string>
+    <string name="commPara_menu_requery_interval_time">Requery Interval Time</string>
+    <string name="commPara_menu_requery_timeout">Requery Timeout</string>
+</resources>
